@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Adicionar Funcionário</title>
+    <link rel="stylesheet" href="/css/admin_dashboard.css" />
+  </head>
+  <body>
+    <div class="admin-container">
+      <aside class="sidebar">
+        <h2>Sistema de Controle de Ponto</h2>
+        <nav>
+          <a href="/pages/admin_dashboard.html">Início</a>
+          <a href="/pages/controle_ponto.html">Registro de Ponto</a>
+          <a href="#">Relatórios</a>
+          <a href="#">Configurações</a>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <header>
+          <h1>Adicionar Funcionário</h1>
+        </header>
+        <section class="form-section">
+          <form id="cadastroForm">
+            <label for="nome">Nome de Funcionário</label>
+            <input type="text" id="nome" name="nome" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required />
+
+            <label for="data_nascimento">Data Nascimento</label>
+            <input
+              type="date"
+              id="data_nascimento"
+              name="data_nascimento"
+              required
+            />
+
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" required />
+
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" required />
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required />
+
+            <label for="funcao">Função</label>
+            <select id="funcao" name="funcao" required>
+              <option value="" disabled selected>Selecione uma Função</option>
+              <option value="Administrador">Administrador</option>
+              <option value="Funcionário">Funcionário</option>
+            </select>
+
+            <label for="departamento">Departamento</label>
+            <select id="departamento" name="departamento" required>
+              <option value="" disabled selected>
+                Selecione um Departamento
+              </option>
+              <option value="RH">RH</option>
+              <option value="TI">TI</option>
+              <option value="Financeiro">Financeiro</option>
+            </select>
+
+            <button type="submit">Salvar Funcionário</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <footer>&copy; 2024 Sistema de Controle de Ponto</footer>
+  </body>
+</html>

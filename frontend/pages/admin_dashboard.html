@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Lista Funcionário</title>
+    <link rel="stylesheet" href="/css/admin_dashboard.css" />
+  </head>
+  <body>
+    <div class="admin-container">
+      <aside class="sidebar">
+        <h2>Sistema de Controle de Ponto</h2>
+        <nav>
+          <a href="/pages/admin_dashboard.html">Início</a>
+          <a href="/pages/controle_ponto.html">Registro de Ponto</a>
+          <a href="#">Relatórios</a>
+          <a href="#">Configurações</a>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <header>
+          <h1>Bem-vindo ao sistema de Controle de Ponto</h1>
+          <button
+            onclick="window.location.href='/pages/cadastro_funcionario.html'"
+          >
+            <span>
+              <svg
+                height="24"
+                width="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              Adicionar Funcionário
+            </span>
+          </button>
+        </header>
+        <section class="user-list-section">
+          <h2>Lista de Funcionários</h2>
+          <div class="search-bar">
+            <input type="text" placeholder="Pesquisar..." id="search-input" />
+            <button class="search-btn">Pesquisar</button>
+          </div>
+          <ul id="user-list">
+            <!-- Funcionários listados aqui -->
+          </ul>
+        </section>
+      </main>
+    </div>
+    <footer>&copy; 2024 Sistema de Controle de Ponto</footer>
+    <script src="/js/admin_dashboard.js"></script>
+  </body>
+</html>

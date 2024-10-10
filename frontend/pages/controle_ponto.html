@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle de Ponto</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- Botão para login do administrador -->
+    <button
+      onclick="window.location.href='/pages/admin_login.html'"
+      class="admin-login-button"
+    >
+      Login como Administrador
+    </button>
+
+    <div class="controle-ponto-container">
+        <h2>Controle Ponto</h2>
+        <p id="data_hora_atual"></p>
+        <form id="formPonto">
+          <label>Entrada Manhã:</label>
+          <input type="text" id="horario1" readonly>
+      
+          <label>Saída Manhã:</label>
+          <input type="text" id="horario2" readonly>
+      
+          <label>Entrada Tarde:</label>
+          <input type="text" id="horario3" readonly>
+      
+          <label>Saída Tarde:</label>
+          <input type="text" id="horario4" readonly>
+      
+          <button type="button" id="btnRegistrar">Registrar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Referência ao script.js -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>
